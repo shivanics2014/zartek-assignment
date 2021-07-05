@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { DraggableList } from './DraggableList';
+import { TypingTest } from './TypingTest';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  return(
+		<div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
+		<b>Draggable List</b>
+        <DraggableList />
+		<br />
+		<b>Typing Test</b>
+		<TypingTest testParagraph={'Hi, My name is Shivani and I have graduated from APJ Abdul Kalam Technical University in 2018.'}/>
+		</div>
+		)
 }
 
 export default App;
